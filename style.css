@@ -1,0 +1,90 @@
+:root {
+--pink: #ffd6e8;
+--red: #d11a2a;
+--card: #ffffff;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+background: var(--pink);
+font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+.wrap {
+min-height: 100vh;
+display: grid;
+place-items: center;
+padding: 20px;
+}
+
+.card {
+background: var(--card);
+width: min(520px, 92vw);
+padding: 22px;
+border-radius: 18px;
+text-align: center;
+box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.title {
+margin: 0;
+font-size: 2.2rem;
+color: var(--red);
+font-weight: 800;
+}
+
+.spacer {
+height: 18px;
+}
+
+.valentine-img {
+width: min(360px, 85vw);
+border-radius: 14px;
+display: block;
+margin: 0 auto;
+}
+
+.buttons {
+display: flex;
+gap: 12px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.btn {
+border: none;
+padding: 12px 24px;
+font-size: 1.05rem;
+font-weight: bold;
+border-radius: 999px;
+cursor: pointer;
+box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+transition: transform 0.15s ease;
+}
+
+.yes {
+background: #ff3b6f;
+color: white;
+}
+
+.no {
+background: #f1f1f1;
+}
+
+.hint {
+margin: 14px 0 10px;
+}
+
+.clickme {
+display: inline-block;
+color: var(--red);
+font-weight: bold;
+text-decoration: none;
+border: 2px solid rgba(209,26,42,0.25);
+padding: 8px 14px;
+border-radius: 999px;
+}
